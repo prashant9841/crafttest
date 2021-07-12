@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: 'Test App'
+primary: true
+siteGroup: 5fc45055-01ec-44e3-94d7-6e8a19fe61bc # Test App
+sortOrder: 1

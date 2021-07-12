@@ -1,0 +1,110 @@
+field: 909860c8-3fc6-4134-9c8b-9d244247ca3d # Slider
+fieldLayouts:
+  ca736f37-b2e4-4861-82c2-7efe9046f27d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c8e92600-c763-4f55-8c38-c9085a4f7692 # Slider Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6b1a8a09-1eb1-4316-8f0c-09518f2d7061 # Slider Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 16b88fb2-04cf-4f91-ad5b-368508fde3a9 # Slider Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6b1a8a09-1eb1-4316-8f0c-09518f2d7061: # Slider Description
+    contentColumnType: text
+    fieldGroup: null
+    handle: sliderDescription
+    instructions: ''
+    name: 'Slider Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  16b88fb2-04cf-4f91-ad5b-368508fde3a9: # Slider Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: sliderImage
+    instructions: ''
+    name: 'Slider Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:d7e6085d-3b33-4836-b0e5-05c7ec471d2e' # Image
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:d7e6085d-3b33-4836-b0e5-05c7ec471d2e' # Image
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c8e92600-c763-4f55-8c38-c9085a4f7692: # Slider Title
+    contentColumnType: text
+    fieldGroup: null
+    handle: sliderTitle
+    instructions: ''
+    name: 'Slider Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: sliderS
+name: Slider
+sortOrder: 1

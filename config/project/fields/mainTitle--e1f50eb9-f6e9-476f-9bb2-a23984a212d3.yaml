@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 3a86ae90-9f13-4a13-9cd4-9f4ce2f24cce # Hero Image
+handle: mainTitle
+instructions: ''
+name: 'Main Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
