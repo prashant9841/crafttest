@@ -1,6 +1,4 @@
 import $ from 'jquery'
-import 'bootstrap'
-import 'slick-slider'
 
 $(window).on('load', function () {
   var wHeight = $(window).height()

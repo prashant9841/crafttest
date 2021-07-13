@@ -1,25 +1,34 @@
 // breakpoints
-$sm:     576px;
-$md:     768px;
-$lg:     1200px;
-$xl:     1600px;
+$sm: 576px;
+$md: 768px;
+$lg: 1200px;
+$xl: 1600px;
 
 // // colors 1
-$black:               #000000;
-$white:               #ffffff;
+$black: #000000;
+$white: #ffffff;
 
 // animation
 $animation-duration: 0.3s;
-$animation-timing: cubic-bezier(.91,.01,.6,.99);
+$animation-timing: cubic-bezier(0.91, 0.01, 0.6, 0.99);
 
 // fonts
 
 // spacers
-$spacer-xxs:      .25rem;
-$spacer-xs:       .5rem;
-$spacer-sm:       .75rem;
-$spacer-md:       2vw;
-$spacer-lg:       4vw;
-$spacer-xl:       6vw;
-$spacer-xxl:      10vw;
-$page-margin:     12vw;
+$spacer-xxs: 0.25rem;
+$spacer-xs: 0.5rem;
+$spacer-sm: 0.75rem;
+$spacer-md: 2vw;
+$spacer-lg: 4vw;
+$spacer-xl: 6vw;
+$spacer-xxl: 10vw;
+$page-margin: 12vw;
+
+// fonts
+$font-size: 1rem;
+$font-family: 'Inter', sans-serif;
+$font-color: #dae0e0;
+
+// page
+$background-color: #121212;
+$page-width: 650px;

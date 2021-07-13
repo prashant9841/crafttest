@@ -19,8 +19,8 @@ return [
         ],
         // Public server config
         'server' => [
-            'manifestPath' => '@webroot/assets/',
-            'publicPath' => '/assets/',
+            'manifestPath' => '@webroot/',
+            'publicPath' => '/',
         ],
         // webpack-dev-server config
         'devServer' => [

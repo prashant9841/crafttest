@@ -1,10 +1,10 @@
 let mix = require('laravel-mix')
-const purgecss = require('@fullhuman/postcss-purgecss')
+// const purgecss = require('@fullhuman/postcss-purgecss')
 
 // ? ========== DEVELOPMENT SETTINGS ==========
 if (!mix.inProduction()) {
   mix
-    .setPublicPath('web/build/')
+    .setPublicPath('web/build')
     .js('./src/main.js', 'js')
     .sass('./src/scss/main.scss', 'css')
     .sourceMaps(true, 'source-map')
@@ -46,7 +46,7 @@ if (!mix.inProduction()) {
   // ⬇️ Keeps component files in the correct folder.
   mix.webpackConfig({
     output: {
-      publicPath: 'web/assets',
+      publicPath: 'web',
       chunkFilename: 'js/components/[name].min.js',
     },
     module: {
@@ -65,7 +65,7 @@ if (!mix.inProduction()) {
     },
   })
   mix
-    .setPublicPath('web/assets')
+    .setPublicPath('web')
     .js('./src/main.js', 'js')
     .sass('./src/scss/main.scss', 'css')
     .options({
@@ -76,14 +76,14 @@ if (!mix.inProduction()) {
           grid: 'autoplace',
         }),
         require('cssnano'),
-        purgecss({
-          content: [
-            './templates/**/*.html',
-            './templates/**/*.twig',
-            './src/js/**/*.js',
-          ],
-          safelist: [],
-        }),
+        // purgecss({
+        //   content: [
+        //     './templates/**/*.html',
+        //     './templates/**/*.twig',
+        //     './src/js/**/*.js',
+        //   ],
+        //   safelist: [],
+        // }),
       ],
     })
     .version()

@@ -40,6 +40,6 @@
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.16.1",
-    "slick-slider": "^1.8.2"
+    "slick-carousel": "^1.8.1"
   }
 }
