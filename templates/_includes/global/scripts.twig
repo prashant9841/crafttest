@@ -1,0 +1,9 @@
+
+{% if not craft.app.config.general.devMode %}
+  {# Google Analytics Go Here #}
+{% endif %}
+
+{# Splitting out output files in this way allows for better longterm caching of vendor files.  #}
+{# See the `mix.extract()` method in `webpack.mix.js` and https://laravel-mix.com/docs/5.0/extract #}
+
+{{ craft.twigpack.includeJsModule("/js/main.js") }}

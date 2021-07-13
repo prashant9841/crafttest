@@ -1,8 +1,13 @@
-dateModified: 1626128575
+dateModified: 1626135844
 email:
   fromEmail: prashant9841@gmail.com
   fromName: 'Test App'
   transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true

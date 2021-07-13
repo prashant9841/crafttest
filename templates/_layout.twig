@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {# Using Blocks in this manner provides flexibility as projects progress.  #}
+  {# Need to add something to the head on a certain page? Do like so... #}
+
+  {# 
+  {% block head  %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="#custom-link-or-meta-tag-here">
+  {% endblock %} 
+  #}
+
+  <head>
+    {% block head %}
+      {{ include('_includes/global/head') }}
+    {% endblock %}
+  </head>
+
+  <body>
+
+    <header>
+      {% block header %}
+        {{ include('_includes/global/header') }}
+      {% endblock %}
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      {% block footer %}
+        {{ include('_includes/global/footer') }}
+      {% endblock %}
+    </footer>
+
+    {% block scripts %}
+      {{ include('_includes/global/scripts') }}
+    {% endblock %}
+    
+  </body>
+</html>

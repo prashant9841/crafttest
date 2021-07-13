@@ -6,6 +6,6 @@ siteSettings:
   1e4821c1-4244-4a2d-a256-88b138ddbd61: # Test App
     enabledByDefault: true
     hasUrls: true
-    template: index
+    template: pages/types/home
     uriFormat: __home__
 type: single

@@ -1,4 +1,6 @@
-{% extends "components/layout" %} {% block main %}
+{% extends "_layout" %}
+
+{% block content %}
 <div class="section first">
 	<div
 		class="image"
@@ -6,7 +8,7 @@
 		if
 		entry.displayImage[0]
 		%}
-		style="background-image: url('/img/{{
+		style="background-image: url('/assets/img/{{
 			entry.displayImage[0].fileName
 		}}')"
 		{%
@@ -37,7 +39,7 @@
 		<div class="slider-item">
 			<div class="container">
 				<img
-					src="/img/{{ sliderItem.sliderImage[0].filename }}"
+					src="assets/img/{{ sliderItem.sliderImage[0].filename }}"
 					alt="{{ sliderItem.sliderTitle }}"
 				/>
 				<div class="caption">
