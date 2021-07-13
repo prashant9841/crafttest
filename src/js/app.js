@@ -1,13 +1,10 @@
-// Test import of styles
+import $ from 'jquery'
 import 'bootstrap'
 import 'slick-slider'
-import 'jquery'
-import '@/styles/index.scss'
 
 $(window).on('load', function () {
   var wHeight = $(window).height()
   var wWidth = $(window).width()
-
   $('.loading').fadeOut('3000')
 
   $('.slickSlider').slick({
@@ -21,6 +18,7 @@ $(window).on('load', function () {
     autoplaySpeed: 2000,
   })
 })
+
 $(window).on('scroll', function () {
   var wScroll = $(window).scrollTop()
 

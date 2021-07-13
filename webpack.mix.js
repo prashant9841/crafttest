@@ -5,7 +5,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')
 if (!mix.inProduction()) {
   mix
     .setPublicPath('web/build/')
-    .js('./src/js/main.js', 'js')
+    .js('./src/main.js', 'js')
     .sass('./src/scss/main.scss', 'css')
     .sourceMaps(true, 'source-map')
 
@@ -15,12 +15,12 @@ if (!mix.inProduction()) {
     // fixes hmr bug introduced in Webpack 5
     target: 'web',
     output: {
-      publicPath: 'http://0.0.0.0:8080/',
+      publicPath: 'http://0.0.0.0:9000/',
     },
     devServer: {
-      public: 'http://0.0.0.0:8080/',
+      public: 'http://0.0.0.0:9000/',
       host: '0.0.0.0',
-      port: 8080,
+      port: 9000,
       headers: {
         'Access-Control-Allow-Origin': '*',
       },
@@ -46,7 +46,7 @@ if (!mix.inProduction()) {
   // ⬇️ Keeps component files in the correct folder.
   mix.webpackConfig({
     output: {
-      publicPath: '/assets/dist/',
+      publicPath: 'web/assets',
       chunkFilename: 'js/components/[name].min.js',
     },
     module: {
@@ -65,8 +65,8 @@ if (!mix.inProduction()) {
     },
   })
   mix
-    .setPublicPath('web/assets/dist')
-    .js('./src/js/main.js', 'js')
+    .setPublicPath('web/assets')
+    .js('./src/main.js', 'js')
     .sass('./src/scss/main.scss', 'css')
     .options({
       postCss: [
